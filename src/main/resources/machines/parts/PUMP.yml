@@ -1,0 +1,16 @@
+# This is the parts file for a machine.
+# See the example.yml file for an explanation.
+1:
+  1:
+    hand-item: 'BUCKET'
+    offset:
+      x: 0.4
+      y: -0.15
+      z: 0.25
+  2:
+    head-item: 'PLAYER_HEAD:f07a8ed2bd230fd79bf07cea2c392340166e606a887190d598d6e5bc9a62c6a4'
+    big: true
+    offset:
+      x: 0.5
+      y: -1.4
+      z: 0.5

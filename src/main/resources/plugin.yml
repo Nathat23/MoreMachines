@@ -1,0 +1,12 @@
+name: MoreMachines
+main: uk.antiperson.moremachines.MoreMachines
+version: 1.0.0
+website: idk
+api-version: 1.13
+commands:
+  givemachine:
+    aliases: [givem]
+    description: Gives a machine to a player.
+  moremachines:
+    aliases: [mm]
+    description: Commands list.

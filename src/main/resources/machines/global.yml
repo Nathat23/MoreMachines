@@ -1,0 +1,35 @@
+# This is the global machines file.
+# Settings in this file will only be used if there are no overriding settings in each machines respective file.
+# You can override settings in each specific file by copying the section from this file to the machines file.
+
+# Default settings for machines.
+default:
+  level: 1
+  range: 5
+  tick-interval: 5
+
+# The maximum settings for machines for which this can be upgraded to.
+max:
+  level: 5
+  range: 20
+
+# The hologram that is displayed above machines to indicate status.
+hologram:
+  use-hologram: true
+  # The text to be displayed on the hologram.
+  # Minecraft color codes are supported, by using '&' before the letter/number.
+  # Placeholders:
+  # {type} - the machines type.
+  # {running_status} - whether the machine is running or stopped.
+  # {status} - the current status of the machine.
+  # {level} - the current level of this machine
+  # {range} - the range of this machine.
+  display:
+    - '&6Type: &a{type}'
+    - '&6Status: &e{running_status} ({status})'
+    - '&6Level: &b{level} &6Range: &b{range} blocks'
+
+# The item for this machine.
+item:
+  # The material of the item.
+  material: DISPENSER

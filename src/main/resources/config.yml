@@ -1,0 +1,20 @@
+# MoreMachines 1.0 general settings file.
+
+# The storage of machine data.
+storage:
+  # The type of machine storage to be used.
+  # Currently supported storage methods:
+  # SQLITE - file based database.
+  # MYSQL - server based datbase.
+  type: SQLITE
+  # The ip address/hostname of the database server.
+  ip: 127.0.0.1
+  # The port number of the database server.
+  port: 3306
+  # The username for the database server.
+  username: user
+  # The password for the database server.
+  password: password123
+  # The name of the database.
+  db-name: moremachines
+

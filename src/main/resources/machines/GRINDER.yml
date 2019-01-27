@@ -1,0 +1,32 @@
+# Configuration for individual machines.
+# Settings in this file override the settings in the global.yml file.
+
+# If this machine should be obtainable and usable.
+enabled: true
+
+# The item for this machine.
+item:
+  # The display name of the item.
+  display-name: '&6Grinder Machine'
+  # The lore of the item.
+  lore:
+    - '&aThe grinder machine damages and eventually kills nearby mobs.'
+    - '&6Level: &b{level}'
+    - '&6Range: &b{range}'
+
+# The crafting recipe for this machine.
+recipe:
+  use-recipe: true
+  # The key of items to use for the shape.
+  # Each symbol before the colon represents a single material in the recipe.
+  key:
+    - '&:DIAMOND_SWORD'
+    - '?:GOLD_BLOCK'
+    - '/:IRON_BLOCK'
+    - '*:COBBLESTONE'
+  # The shape for this recipe.
+  # Each character has a material defined to it above in the key section.
+  shape:
+    - '///'
+    - '?&?'
+    - '***'

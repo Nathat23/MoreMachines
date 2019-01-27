@@ -1,0 +1,30 @@
+# This is the parts file for a machine.
+# A part is a armor stand which, when combined with several other armor stands, creates a unit.
+# A unit is an object that can be used to represent progress.
+#
+# Each part and unit has to have its own unique id and section. Unit ids cannot be changed!!
+# Each part can have an offset and can be a big or small armor stand.
+# In addition, each unit can have a:
+# 'hand-item' - item which is held in the hand
+# 'head-item' - item which is placed on the head.
+# 'chest-item' - item which is placed on the chest.
+# 'leg-item' - item which is placed on the legs.
+# 'foot-item' - item which is placed on the boots.
+# Player heads can have custom skins if a ':' is added after the material name before the mojang head key.
+
+# Unit id
+1:
+  # Part id
+  1:
+    # Part attributes
+    hand-item: 'SHEARS'
+    head-item: 'PLAYER_HEAD:538071721cc5b4cd406ce431a13f86083a8973e1064d2f8897869930ee6e5237'
+    chest-item: 'IRON_CHESTPLATE'
+    leg-item: 'GOLD_LEGGINGS'
+    foot-item: 'DIAMOND_BOOTS'
+    big: true
+    # The offset from the spawn location it should be placed.
+    offset:
+      x: 0.5
+      y: 0.0
+      z: 0.5

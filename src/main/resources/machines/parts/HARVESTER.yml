@@ -1,0 +1,16 @@
+# This is the parts file for a machine.
+# See the example.yml file for an explanation.
+1:
+  1:
+    hand-item: 'DIAMOND_HOE'
+    offset:
+      x: 0.4
+      y: -0.15
+      z: 0.25
+  2:
+    head-item: 'PLAYER_HEAD:538071721cc5b4cd406ce431a13f86083a8973e1064d2f8897869930ee6e5237'
+    big: true
+    offset:
+      x: 0.5
+      y: -1.4
+      z: 0.5
