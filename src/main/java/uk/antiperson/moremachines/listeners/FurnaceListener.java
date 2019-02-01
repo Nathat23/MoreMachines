@@ -46,7 +46,7 @@ public class FurnaceListener implements Listener {
     }
 
     @EventHandler
-    public void onFurnanceClick(InventoryClickEvent event) {
+    public void onFurnaceClick(InventoryClickEvent event) {
         if (event.getClickedInventory() == null) {
             return;
         }

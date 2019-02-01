@@ -22,7 +22,7 @@ public class Utilities {
      * Generate the skull meta for a head.
      *
      * @param item     the item to generate the meta for.
-     * @param mojangId the mojand head url
+     * @param mojangId the mojang head url
      * @return the skull meta for a head.
      */
     public static SkullMeta getSkullMeta(ItemStack item, String mojangId) {

@@ -3,7 +3,6 @@ package uk.antiperson.moremachines.machines.unit.part;
 import org.bukkit.Location;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.EntityType;
-import org.bukkit.util.EulerAngle;
 import uk.antiperson.moremachines.config.machines.PartConfig;
 import uk.antiperson.moremachines.machines.Machine;
 import uk.antiperson.moremachines.utils.BasicLocation;

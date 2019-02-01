@@ -1,6 +1,5 @@
 package uk.antiperson.moremachines.machines.machines;
 
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.Ageable;
 import uk.antiperson.moremachines.MoreMachines;

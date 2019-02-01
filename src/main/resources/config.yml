@@ -9,7 +9,7 @@ storage:
   # The type of machine storage to be used.
   # Currently supported storage methods:
   # SQLITE - file based database.
-  # MYSQL - server based datbase.
+  # MYSQL - server based database.
   type: SQLITE
   # The ip address/hostname of the database server.
   ip: 127.0.0.1

@@ -8,7 +8,7 @@ import uk.antiperson.moremachines.gui.page.MachinePage;
 import uk.antiperson.moremachines.machines.Machine;
 import uk.antiperson.moremachines.machines.MachineState;
 
-import java.util.Arrays;
+import java.util.Collections;
 
 public class MainPage extends MachinePage {
 
@@ -59,7 +59,7 @@ public class MainPage extends MachinePage {
     public InventoryItem createItem() {
         InventoryItem inventoryItem = getMachine().isRunning() ? new InventoryItem(Material.GREEN_WOOL) : new InventoryItem(Material.RED_WOOL);
         inventoryItem.setDisplayName(getMachine().isRunning() ? ChatColor.GREEN + "Running" : ChatColor.RED + "Stopped");
-        inventoryItem.setLore(Arrays.asList("Status: " + getMachine().getState()));
+        inventoryItem.setLore(Collections.singletonList("Status: " + getMachine().getState()));
         return inventoryItem;
     }
 }
