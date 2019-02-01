@@ -6,7 +6,7 @@
 default:
   level: 1
   range: 5
-  tick-interval: 5
+  tick-interval: 10
 
 # The maximum settings for machines for which this can be upgraded to.
 max:
