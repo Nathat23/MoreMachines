@@ -7,21 +7,20 @@ import com.sk89q.worldguard.protection.flags.Flags;
 import com.sk89q.worldguard.protection.regions.RegionContainer;
 import com.sk89q.worldguard.protection.regions.RegionQuery;
 import org.bukkit.Bukkit;
-import uk.antiperson.moremachines.compat.CompatManager;
+import uk.antiperson.moremachines.MoreMachines;
 import uk.antiperson.moremachines.compat.PluginHook;
 
 public class WorldGuardHook implements PluginHook {
 
-    private CompatManager compatManager;
-    public WorldGuardHook(CompatManager compatManager) {
-        this.compatManager = compatManager;
+    private MoreMachines mm;
+    public WorldGuardHook(MoreMachines mm) {
+        this.mm = mm;
     }
 
     @Override
-    public void register() {
-        if (Bukkit.getPluginManager().isPluginEnabled("WorldGuard")) {
-            compatManager.register(this);
-        }
+    public boolean canEnable() {
+        return mm.getConfigManager().getGeneralConfig().isWorldGuardAllowed() &&
+                Bukkit.getPluginManager().isPluginEnabled("WorldGuard");
     }
 
     @Override

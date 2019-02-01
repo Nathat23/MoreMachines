@@ -1,5 +1,9 @@
 # MoreMachines 1.0 general settings file.
 
+# The comparability for other plugins.
+compat:
+  worldguard: true
+
 # The storage of machine data.
 storage:
   # The type of machine storage to be used.

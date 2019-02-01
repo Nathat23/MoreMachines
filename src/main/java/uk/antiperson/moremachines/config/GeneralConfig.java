@@ -17,6 +17,10 @@ public class GeneralConfig {
         return storageConfig;
     }
 
+    public boolean isWorldGuardAllowed() {
+        return getConfig().getBoolean("compat.worldguard");
+    }
+
     private FileConfiguration getConfig() {
         return file.getConfig();
     }

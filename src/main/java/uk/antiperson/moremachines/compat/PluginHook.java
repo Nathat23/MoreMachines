@@ -4,7 +4,7 @@ import org.bukkit.Location;
 
 public interface PluginHook {
 
-    void register();
+    boolean canEnable();
 
     boolean check(Location location);
 }
