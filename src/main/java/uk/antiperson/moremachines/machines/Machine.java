@@ -21,7 +21,7 @@ public abstract class Machine implements AbstractMachine {
     private MachineState state;
     private boolean running;
     private UnitManager unitManager;
-    MoreMachines mm;
+    private MoreMachines mm;
     private Hologram hologram;
     private FuelBlock fuel;
     private UUID uuid;
@@ -253,4 +253,5 @@ public abstract class Machine implements AbstractMachine {
     public UUID getUniqueId() {
         return uuid;
     }
+
 }

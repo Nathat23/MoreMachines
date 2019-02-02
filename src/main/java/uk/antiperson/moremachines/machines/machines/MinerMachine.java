@@ -2,7 +2,6 @@ package uk.antiperson.moremachines.machines.machines;
 
 import org.bukkit.block.Block;
 import uk.antiperson.moremachines.MoreMachines;
-import uk.antiperson.moremachines.machines.BlockMachine;
 import uk.antiperson.moremachines.machines.MachineState;
 import uk.antiperson.moremachines.machines.MachineType;
 import uk.antiperson.moremachines.machines.unit.Unit;

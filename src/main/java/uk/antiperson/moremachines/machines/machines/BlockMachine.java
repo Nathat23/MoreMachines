@@ -1,8 +1,11 @@
-package uk.antiperson.moremachines.machines;
+package uk.antiperson.moremachines.machines.machines;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import uk.antiperson.moremachines.MoreMachines;
+import uk.antiperson.moremachines.machines.Machine;
+import uk.antiperson.moremachines.machines.MachineState;
+import uk.antiperson.moremachines.machines.MachineType;
 import uk.antiperson.moremachines.utils.BasicLocation;
 
 import java.util.ArrayList;
@@ -12,10 +15,12 @@ import java.util.function.Predicate;
 public abstract class BlockMachine extends Machine {
 
     private List<Block> blocksToBreak;
+    private MoreMachines mm;
 
     public BlockMachine(MoreMachines mm, BasicLocation sourceBlock, MachineType type) {
         super(mm, sourceBlock, type);
-        blocksToBreak = new ArrayList<>();
+        this.mm = mm;
+        this.blocksToBreak = new ArrayList<>();
     }
 
     /**

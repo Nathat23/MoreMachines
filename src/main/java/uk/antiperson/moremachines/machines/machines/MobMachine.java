@@ -1,8 +1,10 @@
-package uk.antiperson.moremachines.machines;
+package uk.antiperson.moremachines.machines.machines;
 
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import uk.antiperson.moremachines.MoreMachines;
+import uk.antiperson.moremachines.machines.Machine;
+import uk.antiperson.moremachines.machines.MachineType;
 import uk.antiperson.moremachines.utils.BasicLocation;
 
 import java.util.Collection;

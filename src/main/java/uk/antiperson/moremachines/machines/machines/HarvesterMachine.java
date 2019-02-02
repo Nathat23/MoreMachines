@@ -3,7 +3,6 @@ package uk.antiperson.moremachines.machines.machines;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.Ageable;
 import uk.antiperson.moremachines.MoreMachines;
-import uk.antiperson.moremachines.machines.BlockMachine;
 import uk.antiperson.moremachines.machines.MachineType;
 import uk.antiperson.moremachines.machines.unit.Unit;
 import uk.antiperson.moremachines.utils.BasicLocation;
