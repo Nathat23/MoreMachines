@@ -1,30 +1,19 @@
 package uk.antiperson.moremachines.machines;
 
 import org.bukkit.Material;
-import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Furnace;
 import org.bukkit.inventory.ItemStack;
-import uk.antiperson.moremachines.utils.BasicLocation;
 
-public class FuelBlock {
-
-    private Machine machine;
-    private BasicLocation location;
+public class FuelBlock extends MachineBlock {
 
     public FuelBlock(Machine machine) {
-        this.machine = machine;
-        this.location = new BasicLocation(machine.getMachineBlock().getRelative(BlockFace.EAST).getLocation());
-    }
-
-    public BasicLocation getLocation() {
-        return location;
+        super(machine, BlockFace.EAST);
     }
 
     public Furnace getFurnace() {
-        Block rel = location.toBukkit().getBlock();
-        if (rel.getType() == Material.FURNACE) {
-            return (Furnace) rel.getState();
+        if (getBlock().getType() == Material.FURNACE) {
+            return (Furnace) getBlock().getState();
         }
         return null;
     }
@@ -42,7 +31,7 @@ public class FuelBlock {
                 return;
             }
         }
-        machine.setRunning(false);
-        machine.setState(MachineState.NO_FUEL);
+        getMachine().setRunning(false);
+        getMachine().setState(MachineState.NO_FUEL);
     }
 }

@@ -51,7 +51,7 @@ public abstract class BlockMachine extends Machine {
                     if (block.getLocation().equals(getMachineLocation().toBukkit())) {
                         continue;
                     }
-                    if (block.getLocation().equals(getFuel().getLocation().toBukkit())) {
+                    if (block.getLocation().equals(getFuel().getBlock().getLocation())) {
                         continue;
                     }
                     list.add(block);

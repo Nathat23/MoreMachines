@@ -247,6 +247,7 @@ public abstract class Machine implements AbstractMachine {
 
     /**
      * Returns the UUID for this machine.
+     * The UUID changes every server restart/reload.
      *
      * @return the UUID for this machine.
      */
